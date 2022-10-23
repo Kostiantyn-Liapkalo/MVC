@@ -10,11 +10,11 @@
 </head>
 <body>
     <?php require "blocks/header.php" ?>
-    <div class="container">
+    <div class="container mt-5">
     <h3>Сontact form</h3>
     <form action="check.php" method="post">
-        <input type="email" name="email" placeholder="Input Email" class="form-control">
-        <textarea name="message" class="form-control" placeholder="Enter your message"></textarea>
+        <input type="email" name="email" placeholder="Input Email" class="form-control"><br>
+        <textarea name="message" class="form-control" placeholder="Enter your message"></textarea><br>
         <button type="submit" name="send" class="btn btn-success">Send</button>
     </form>
 

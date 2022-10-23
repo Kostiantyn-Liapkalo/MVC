@@ -4,9 +4,14 @@
       </a>
 
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Main</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Сontacts</a>
-      
-        <a class="btn btn-outline-primary" href="#">login</a>
-      </nav>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Main</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/about">Сontacts</a>
+        </nav>
+        <?php
+        if($_COOKIE['user'] == 'Yes'):
+        ?>
+        <a class="btn btn-outline-primary" href="/auth.php">User account</a>
+        <?php else: ?>
+        <a class="btn btn-outline-primary" href="/auth.php">login</a>
+        <?php endif;?>
     </div>
